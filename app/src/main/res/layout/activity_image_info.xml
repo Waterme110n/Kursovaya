@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/back">
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_margin="4dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/pictureButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@android:color/transparent"
+                    android:background="@android:color/transparent"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="4dp">
+
+                <ImageButton
+                    android:id="@+id/likeButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/like"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    />
+
+                <TextView
+                    android:id="@+id/likeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/labels"
+                    android:fontFamily="@font/moderustic_bold"
+                    android:textSize="20dp"
+                    android:text=""/>
+
+
+                <ImageButton
+                    android:id="@+id/CommentButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/coment"
+                    android:scaleType="fitCenter"
+                    android:padding="8dp"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/dislikeButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/dislike"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/labels"
+                    android:fontFamily="@font/moderustic_bold"
+                    android:textSize="20dp"
+                    android:text=""/>
+
+
+
+                <ImageButton
+                    android:id="@+id/downloadButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/download"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    android:layout_marginStart="180dp"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="10dp">
+
+                    <ImageButton
+                        android:id="@+id/profileImageButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:src="@android:color/transparent"
+                        android:background="@color/back">
+                    </ImageButton>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/profileTextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_marginStart="-25dp"
+                    android:layout_marginEnd="60dp"
+                    android:paddingStart="30dp"
+                    android:text="231"
+                    android:fontFamily="@font/moderustic_medium"
+                    android:textColor="@color/labels"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/namePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/labels"
+                android:fontFamily="@font/moderustic_bold"
+                android:textSize="30dp"
+                android:layout_marginStart="10dp"
+                android:text=""/>
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/tagsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flexWrap="wrap"
+                app:justifyContent="flex_start"
+                android:layout_margin="10dp">
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <TextView
+                android:id="@+id/editTextDesc"
+                android:fontFamily="@font/moderustic_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/labels"
+                android:textColorHint="@color/back"
+                android:background="@android:color/transparent"
+                android:paddingStart="10dp"
+                android:inputType="textMultiLine"
+                android:lines="3"/>
+
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/delete"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="185dp"
+            android:layout_marginEnd="7dp"
+            android:layout_gravity="right|bottom"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/labels"
+            android:layout_marginTop="29dp"
+            android:layout_marginStart="9dp"
+            android:alpha="0.7">
+
+            <ImageButton
+                android:id="@+id/ButtonClose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/labels"
+                android:src="@drawable/arrow_back"
+                android:scaleType="fitCenter"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"
+                android:paddingEnd="3dp"
+                android:padding="0dp"/>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</ScrollView>
+
+

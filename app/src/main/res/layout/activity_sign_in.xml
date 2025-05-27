@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/back">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In Form"
+            android:textColor="@color/text"
+            android:fontFamily="@font/moderustic_extrabold"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/back"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/labels"
+                android:padding="6dp">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:fontFamily="@font/moderustic_bold"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:hint="email"
+                    android:textColor="@color/back"
+                    android:textColorHint="@color/back"
+                    android:background="@android:color/transparent"
+                    android:padding="8dp"
+                    android:paddingStart="20dp"
+                    android:inputType="text"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="260dp"
+                    android:layout_height="3dp"
+                    app:cardCornerRadius="70dp"
+                    app:cardBackgroundColor="@color/back"
+                    android:layout_marginHorizontal="20dp"/>
+
+
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:fontFamily="@font/moderustic_bold"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:hint="password"
+                    android:textColor="@color/back"
+                    android:textColorHint="@color/back"
+                    android:background="@android:color/transparent"
+                    android:padding="8dp"
+                    android:paddingStart="20dp"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no account ? "
+                android:textColor="@color/labels"
+                android:textSize="14sp"
+                android:layout_marginEnd="3dp"
+                android:fontFamily="@font/moderustic_medium"/>
+
+            <Button
+                android:id="@+id/buttonLogIn"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_margin="0dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:padding="0dp"
+                android:text="sign up"
+                android:fontFamily="@font/moderustic_bold"
+                android:textColor="@color/text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonSingIn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/back_arrow"
+        android:src="@drawable/arrow_right"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center|end"
+        android:layout_marginTop="17dp"
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        android:id="@+id/buttonSingInWithGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_margin="40dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom|center_horizontal"
+        android:padding="0dp"
+        android:text="sign in with google"
+        android:fontFamily="@font/moderustic_bold"
+        android:textColor="@color/text"
+        android:textSize="14sp" />
+
+</FrameLayout>

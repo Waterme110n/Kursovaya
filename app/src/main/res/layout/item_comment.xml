@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="50dp"
+                app:cardBackgroundColor="@android:color/transparent"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="10dp">
+
+                <ImageButton
+                    android:id="@+id/profileImageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@android:color/transparent"
+                    android:background="@color/back">
+                </ImageButton>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/profileTextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginStart="-25dp"
+                android:paddingStart="30dp"
+                android:text=""
+                android:layout_marginTop="-8dp"
+                android:fontFamily="@font/moderustic_medium"
+                android:textColor="@color/labels"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/editTextDesc"
+            android:fontFamily="@font/moderustic_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/labels"
+            android:textSize="25dp"
+            android:textColorHint="@color/back"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="50dp"
+            android:padding="5dp"
+            android:inputType="textMultiLine" />
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/delete"
+        android:scaleType="fitCenter"
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="right"
+        />
+
+    </FrameLayout>

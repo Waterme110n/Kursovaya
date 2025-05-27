@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "542190762490",
+    "project_id": "artsnapin-e7f42",
+    "storage_bucket": "artsnapin-e7f42.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542190762490:android:6163e2e9441cce586c4c43",
+        "android_client_info": {
+          "package_name": "com.example.kursovaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "542190762490-6nn6t5osbmpnvamfe6ht9pj9oe6v1t8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kursovaya",
+            "certificate_hash": "0932bacb5da806882b2820fc0a49447584b53e77"
+          }
+        },
+        {
+          "client_id": "542190762490-e3a4o2ih88vcj3mmhvbukf17f69vlkhd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm8anEsopt5CQcfOXHehvqkFV6CYu1CgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "542190762490-e3a4o2ih88vcj3mmhvbukf17f69vlkhd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
